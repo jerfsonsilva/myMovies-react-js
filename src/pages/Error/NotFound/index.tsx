@@ -6,6 +6,7 @@ export function NotFound() {
             <Header />
             <div className="row text-center">
                 <div className="col-12">
+                    <h2>404</h2>
                     <h4>I'm sorry but that page was not found!!!</h4>
                     <p>
                         You can access the home:

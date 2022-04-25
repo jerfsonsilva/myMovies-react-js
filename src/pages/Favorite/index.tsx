@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { AiFillWarning } from "react-icons/ai";
 import Header from "../../components/Header";
 import FavoriteService, { TypeFavoriteItem } from "../../services/FavoriteService";
 import { FavoriteItem } from "./FavoriteItem";
@@ -26,6 +27,12 @@ export function Favorite() {
                         <FavoriteItem item={item} key={index} removeItem={removeItem} />
                     )
                 })}
+                {listMovie.length === 0 &&
+                    (<h4>
+                        You have no saved bookmarks! <AiFillWarning />
+                    </h4>)
+                }
+
             </div>
         </div>
     )
